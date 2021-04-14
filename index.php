@@ -13,14 +13,37 @@
 </head>
 </head>
 <body>
-	<form>
-	<input type="text" name="nome" placeholder="Nome"><br>
-	<input type="text" name="email" placeholder="email"><br>
-	<input type="text" name="senha" placeholder="Senha">
+	<div class="login-form">
+		<form action="autenticar.php" method="post">
+			<div class="logo">
+				<img src="img/logo1.png" alt="sistcovid">
+			</div>
+			<h2 class="text-center">
+				ENTRE NO SISTEMA
+			</h2>
+			<div class="form-group">
+				<input class="form-control" type="email" name="usuario" placeholder="Insira seu Email " required>
+			</div>
 
-		
-	</form>
-	<h2>Teste</h2>
+			<div class="form-group">
+				<input class="form-control" type="password" name="senha" placeholder="Insira sua senha " required>
+			</div>
+
+			<div class="form-group">
+				<button class="btn btn-primary btn-lg btn-block" type="submit" name="btn-login">LOGIN</button>
+			</div>
+
+			<div class="clearfix">
+				<label class="float-left checkbox-inline">
+					<input type="checkbox">
+					Lembrar-me
+				</label>
+				<a href="#" class="float-right">Recuperar Senha</a>	
+			</div>
+		</form>
+	</div>		
+
+
 
 </body>
 </html>
