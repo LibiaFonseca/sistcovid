@@ -25,7 +25,7 @@
 			<form class="form-inline my-2 my-lg-0">
 				
 				<input class="form-control me-2" type="search" placeholder="Nome ou CPF" aria-label="Search" name="txtbuscar">
-				<button class="btn btn-outline-sucondary" type="submit" name="btnbuscar">Buscar</button>
+				<button class="btn btn-outline-sucondary" type="submit" name="<?php ?><?php echo $item2; ?>"><Buscar</button>
 			</form>
 		</form>
 

@@ -3,17 +3,17 @@
 require_once("conexao.php");
 @session_start();
 
-if(empty($_POST['usuario']) || empty($_POST['senha'])){
+if(empty($_POST['usuarios']) || empty($_POST['senha'])){
 	header("location:index.php");
 }
 
-$usuario = $_POST['usuario'];
+$usuario = $_POST['usuarios'];
 $senha = ($_POST['senha']);
 
 
-$res = $pdo->prepare("SELECT * from usuarios where usuario = :usuario and senha = :senha ");
+$res = $pdo->prepare("SELECT * from usuarios where usuarios = :usuarios and senha = :senha ");
 
-$res->bindValue(":usuario", $usuario);
+$res->bindValue(":usuarios", $usuario);
 $res->bindValue(":senha", $senha);
 $res->execute();
 
@@ -23,15 +23,15 @@ $linhas = count($dados);
 
 if($linhas > 0){
 	
-	$_SESSION['nome_usuario'] = $dados[0]['nome'];
-	$_SESSION['nivel_usuario'] = $dados[0]['nivel'];
+	$_SESSION['nome_usuarios'] = $dados[0]['nome'];
+	$_SESSION['nivel_usuarios'] = $dados[0]['nivel'];
 
-	if($_SESSION['nivel_usuario'] == 'admin'){
+	if($_SESSION['nivel_usuarios'] == 'admin'){
 		header("location:painel-adm/index.php");
 		exit();
 	}
 	
-	if($_SESSION['nivel_usuario'] == 'admin'){
+	if($_SESSION['nivel_usuarios'] == 'admin'){
 		header("location:painel-admin/index.php");
 		exit();
 	}
