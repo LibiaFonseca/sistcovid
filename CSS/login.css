@@ -1,5 +1,88 @@
 body{
-	color:#fff;
-	background-color:#490704;
+	color:#c6ac91;
+	background-color:#c6ac91;
 
 }
+.login-form{
+	width: 350px;
+	margin: 0 auto;
+	padding:100px 0 30px;
+}
+.login-form form{
+	color: #000;
+	border-radius: 2px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	background: #ececec;
+	padding: 20px;
+	position: relative;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+
+}
+.login-form .logo{
+	position:absolute;
+	margin:0 auto;
+	left:0;
+	right:0;
+	width:95px;
+	height:95px;
+	top: -70px;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+
+}
+.login-form .logo img{
+	width:100%;
+	border-radius: 50%;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.6);
+
+}
+
+.login-form h2{
+	font-size: 18px;
+	margin: 40px 0 25px;
+}
+
+.form-control{
+	min-height: 40px;
+	background: #fff;
+	box-shadow: none !important;
+	border-color: #000;
+}
+
+.form-control:focus{
+	border-color: #a9a9a9;
+}
+
+.form-control, .btn{
+	border-radius: 6px;
+}
+
+.login-form .btn{
+	font-size: 16px;
+	font-weight: bold;
+	background: #00bfff;
+	border: none;
+	margin-bottom: 20px;
+}
+
+
+.login-form .btn: hover, login-form .btn:focus{
+	background: #00bfff;
+	outline: none !important;
+}
+
+
+.login-form input[type="checkbox"]{
+	margin-top: 2px;	
+}
+
+.login-form form a{
+	color: #dd7711;
+	text-decoration: none;
+	
+}
+
+.login-form form a:hover{
+	text-decoration: underline;
+}
+
